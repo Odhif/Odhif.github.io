@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Icon Template Square</title>
+    <style>
+        body {
+            background: #b1dea7;
+        }
+
+        .row {
+            width: 720px;
+            margin: 10px auto 10px auto;
+        }
+
+        .image-container {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 20px;
+        }
+
+        img {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <audio src="" autoplay id="music"></audio>
+    <div class="row">
+        <div class="image-container"><img src="img/1.png" data-id="0" height="200" width="200" /></div>
+        <div class="image-container"><img src="img/2.png" data-id="1" height="200" width="200" /></div>
+        <div class="image-container"><img src="img/3.png" data-id="2" height="200" width="200" /></div>
+    </div>
+
+    <div class="row">
+        <div class="image-container"><img src="img/4.png" data-id="3" height="200" width="200" /></div>
+        <div class="image-container"><img src="img/5.png" data-id="4" height="200" width="200" /></div>
+        <div class="image-container"><img src="img/6.png" data-id="5" height="200" width="200" /></div>
+    </div>
+
+    <div class="row">
+        <div class="image-container"><img src="img/7.png" data-id="6" height="200" width="200" /></div>
+        <div class="image-container"><img src="img/8.png" data-id="7" height="200" width="200" /></div>
+        <div class="image-container"><img src="img/9.png" data-id="8" height="200" width="200" /></div>
+    </div>
+
+    <script>
+        let imgs = document.querySelectorAll("img")
+        let audioArray = ['1.wav', '2.wav', '3.flac', '4.flac', '5.wav', '6.m4a', '7.wav', '8.wav', '9.wav']
+        for (let i = 0; i < imgs.length; i++) {
+            imgs[i].onclick = function () {
+                playMusic(audioArray[i])
+            }
+        }
+
+        function playMusic (musicName) {
+            var audio = document.getElementById("music")
+            audio.src = "audio/" + musicName
+            audio.load()
+            audio.play()
+        }
+    </script>
+
+</body>
+
+</html>

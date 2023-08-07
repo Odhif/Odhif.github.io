@@ -1,0 +1,130 @@
+@media (max-width: 1440px) {
+  #carousel {
+    min-height: 510px;
+  }
+}
+@media (max-width: 1280px) {
+  #carousel {
+    min-height: 460px;
+  }
+  .exhibitions .item .item-imgs {
+    width: 60%;
+  }
+  .exhibitions .item .item-info {
+    right: 12%;
+  }
+}
+@media (max-width: 1024px) {
+  .logo,
+  h3 {
+    font-size: 18px;
+  }
+  .phone-menu {
+    display: block;
+  }
+  nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #fff;
+  }
+  nav a {
+    display: block;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+  }
+  #carousel {
+    min-height: 360px;
+  }
+  #points span {
+    width: 10px;
+    height: 10px;
+  }
+  footer p,
+  .exhibitions .item .item-info p,
+  .list .item .item-right-content p {
+    font-size: 14px;
+  }
+  .exhibitions .item .item-imgs {
+    width: 100%;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  .banner {
+    height: 500px;
+  }
+}
+@media (max-width: 768px) {
+  .logo,
+  nav a {
+    font-size: 16px;
+  }
+  #carousel {
+    min-height: 280px;
+  }
+  footer {
+    display: block !important;
+    text-align: center;
+  }
+  footer p {
+    margin-bottom: 1%;
+  }
+  .rows-col-3,
+  .rows-col-4,
+  .rows-col-6 {
+    width: 49%;
+  }
+  .list .item {
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+  }
+  .list .item .item-left,
+  .list .item .item-right {
+    width: 100%;
+  }
+  .banner {
+    height: 360px;
+  }
+  .brand {
+    height: 360px;
+  }
+}
+@media (max-width: 640px) {
+  h1 {
+    font-size: 20px;
+  }
+  .exhibitions .item .item-info {
+    position: static;
+    transform: translate(0, 0);
+  }
+  h3 {
+    font-size: 16px;
+  }
+  .banner {
+    height: 300px;
+  }
+}
+@media (max-width: 475px) {
+  #carousel {
+    min-height: 180px;
+    background-size: 100% 100%;
+  }
+  .rows-col-3,
+  .rows-col-4,
+  .rows-col-6 {
+    width: 100%;
+  }
+  .banner {
+    height: 250px;
+  }
+}
+@media (max-width: 320px) {
+  .banner {
+    height: 200px;
+  }
+}
